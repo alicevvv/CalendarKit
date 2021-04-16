@@ -51,8 +51,8 @@ public struct DaySelectorStyle {
 }
 
 public struct DaySymbolsStyle {
-  public var weekendColor = SystemColors.secondaryLabel
-  public var weekDayColor = SystemColors.label
+  public var weekendColor = smartDarkBlue
+  public var weekDayColor = smartDarkBlue
   public var font = UIFont.systemFont(ofSize: 10)
   public init() {}
 }
@@ -66,11 +66,11 @@ public struct SwipeLabelStyle {
 public struct TimelineStyle {
   public var allDayStyle = AllDayViewStyle()
   public var timeIndicator = CurrentTimeIndicatorStyle()
-  public var timeColor = SystemColors.secondaryLabel
-  public var separatorColor = SystemColors.systemSeparator
-  public var backgroundColor = SystemColors.systemBackground
+  public var timeColor = smartDarkBlue
+  public var separatorColor = smartDarkBlue
+ public var backgroundColor = UIColor.white
   public var font = UIFont.boldSystemFont(ofSize: 11)
-  public var dateStyle : DateStyle = .system
+  public var dateStyle : DateStyle = .twentyFourHour
   public var eventsWillOverlap: Bool = false
   public var minimumEventDurationInMinutesWhileEditing: Int = 30
   public var splitMinuteInterval: Int = 15
@@ -82,9 +82,9 @@ public struct TimelineStyle {
 }
 
 public struct CurrentTimeIndicatorStyle {
-  public var color = SystemColors.systemRed
-  public var font = UIFont.systemFont(ofSize: 11)
-  public var dateStyle : DateStyle = .system
+  public var color = smartLightGold
+  public var font = UIFont.systemFont(ofSize: 12)
+    public var dateStyle : DateStyle = .twentyFourHour
   public init() {}
 }
 
