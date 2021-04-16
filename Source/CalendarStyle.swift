@@ -12,6 +12,12 @@ public enum DateStyle {
     case system
 }
 
+let smartDarkBlue = UIColor(red: 25/255, green: 52/255, blue: 70/255, alpha: 1.0)
+let smartLightBlue = UIColor(red: 221/255, green: 233/255, blue: 242/255, alpha: 1.0)
+let smartDarkGold = UIColor(red: 221/255, green: 179/255, blue: 81/255, alpha: 1.0)
+let smartLightGold = UIColor(red: 239/255, green: 208/255, blue: 139/255, alpha: 1.0)
+let smartMiddleBlue = UIColor(red: 64/225, green: 130/225, blue: 173/225, alpha: 1.0)
+
 public struct CalendarStyle {
   public var header = DayHeaderStyle()
   public var timeline = TimelineStyle()
@@ -22,21 +28,21 @@ public struct DayHeaderStyle {
   public var daySymbols = DaySymbolsStyle()
   public var daySelector = DaySelectorStyle()
   public var swipeLabel = SwipeLabelStyle()
-  public var backgroundColor = SystemColors.secondarySystemBackground
+  public var backgroundColor = UIColor(red:252/255, green:252/255, blue:252/255, alpha:1.0)
   public init() {}
 }
 
 public struct DaySelectorStyle {
-  public var activeTextColor = SystemColors.systemBackground
-  public var selectedBackgroundColor = SystemColors.label
+    public var activeTextColor = UIColor.white
+  public var selectedBackgroundColor = smartDarkGold
 
-  public var weekendTextColor = SystemColors.secondaryLabel
-  public var inactiveTextColor = SystemColors.label
+  public var weekendTextColor = smartDarkBlue
+  public var inactiveTextColor = smartDarkBlue
   public var inactiveBackgroundColor = UIColor.clear
 
-  public var todayInactiveTextColor = SystemColors.systemRed
+  public var todayInactiveTextColor = smartDarkBlue
   public var todayActiveTextColor = UIColor.white
-  public var todayActiveBackgroundColor = SystemColors.systemRed
+  public var todayActiveBackgroundColor = smartDarkGold
     
   public var font = UIFont.systemFont(ofSize: 18)
   public var todayFont = UIFont.boldSystemFont(ofSize: 18)
