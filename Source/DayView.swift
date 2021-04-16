@@ -127,8 +127,8 @@ public class DayView: UIView, TimelinePagerViewDelegate {
     super.layoutSubviews()
     dayHeaderView.frame = CGRect(origin: CGPoint(x: 0, y: layoutMargins.top),
                                  size: CGSize(width: bounds.width, height: headerHeight))
-    let timelinePagerHeight = bounds.height - dayHeaderView.frame.maxY - 270
-    timelinePagerView.frame = CGRect(origin: CGPoint(x: 0, y: dayHeaderView.frame.maxY + 270),
+    let timelinePagerHeight = bounds.height - dayHeaderView.frame.maxY - 265
+    timelinePagerView.frame = CGRect(origin: CGPoint(x: 0, y: dayHeaderView.frame.maxY + 265),
                                      size: CGSize(width: bounds.width, height: timelinePagerHeight))
   }
 
